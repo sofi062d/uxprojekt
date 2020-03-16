@@ -9,17 +9,62 @@
     <!-- husk unik title til alle sider -->
     <title></title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <h1>Velkommen til </h1>
+            <img src="img/eaaalogooutline.png" alt="EAAAsy Library logo">
+        </nav>
     </header>
 
-    <main></main>
+    <main>
+        <p>Med EAAAsy Library kan du fonde inspiration til dit næste projekt, eksamen eller undervisning</p>
+
+        <h2>Hvad søger du?</h2>
+        <button>Grafisk design</button>
+        <button>Multimediedesign</button>
+        <button>Markedsføring</button>
+        <button>Webdesign</button>
+
+        <form class="example">
+            <input type="text" placeholder="Søg" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <section>
+            <h2> 3 bøger af Jakob Ejersbo</h2>
+            <button class="accordion" id="paneloverskrift0"></button>
+            <div class="panel">
+                <p id="paneltekst0"></p>
+
+            </div>
+
+            <button class="accordion" id="paneloverskrift1"></button>
+            <div class="panel">
+                <p id="paneltekst1"></p>
+
+            </div>
+
+            <button class="accordion" id="paneloverskrift2"></button>
+            <div class="panel">
+                <p id="paneltekst2"></p>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <footer></footer>
-    <script src="mitscript.js"></script>
+    <script src="accordion.js"></script>
+    <script src="boeger.js"></script>
+    <script>
+        findBoegerMed("Jakob Ejersbo");
+
+    </script>
 </body>
 
 </html>
