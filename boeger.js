@@ -29,7 +29,7 @@ function findBoegerMed(forfatter) {
                     } </p>`;
             }
             document.getElementById("overskrift").innerHTML =
-                ` Bøger af:  ${post.docs[0].author_name} `;
+                ` Bøger om:  ${post.docs[0].author_name} `;
         })
         .catch(function (e) {
             console.log(e);

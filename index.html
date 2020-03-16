@@ -16,33 +16,49 @@
     <header>
         <nav>
             <h1>Velkommen til </h1>
-            <img src="img/eaaalogooutline.png" alt="EAAAsy Library logo">
+            <img id="logo" src="img/eaaalogooutline.png" alt="EAAAsy Library logo">
         </nav>
     </header>
 
     <main>
-        <p>Med EAAAsy Library kan du fonde inspiration til dit næste projekt, eksamen eller undervisning</p>
+        <article>
+            <p id="introtekst">Med EAAAsy Library kan du finde inspiration til dit næste projekt, eksamen eller undervisning</p>
+        </article>
 
+        <hr>
         <h2>Hvad søger du?</h2>
-        <button>Grafisk design</button>
-        <button>Multimediedesign</button>
-        <button>Markedsføring</button>
-        <button>Webdesign</button>
+        <p id="eksempel">Eksempel:</p>
+        <section class="emner">
+            <button class="knap">Grafisk design</button>
+            <button class="knap">Multimediedesign</button>
+            <br>
+            <button class="knap">Markedsføring</button>
+            <button class="knap">Webdesign</button>
+        </section>
 
+        <br>
+        <br>
         <form class="example">
-            <input type="text" placeholder="Søg" name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" id="soegefelt" placeholder="Søg på et emne" name="search">
+            <br>
+            <br>
+
+
+            <button type="button" id="soegeknap">Søg<i class="fa fa-search"></i></button>
+
+
         </form>
 
+
         <section>
-            <h2> 3 bøger af Jakob Ejersbo</h2>
+            <h2 id="overskrift"> Bøger om </h2>
             <button class="accordion" id="paneloverskrift0"></button>
             <div class="panel">
+                <video controls>
+                    <source src="video/vej-2.mp4" type="video/mp4"></video>
                 <p id="paneltekst0"></p>
 
-            </div>
-
-            <button class="accordion" id="paneloverskrift1"></button>
+            </div> <button class="accordion" id="paneloverskrift1"></button>
             <div class="panel">
                 <p id="paneltekst1"></p>
 
@@ -58,13 +74,15 @@
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <p class="footertekst">Har du spørgsmål? <br>
+            Så kontakt os!</p>
+        <p class="footertekst">Email: eaa-bibliotek@eaaa.dk</p>
+        <p class="footertekst">Tlf: 7228 6040</p>
+    </footer>
     <script src="accordion.js"></script>
     <script src="boeger.js"></script>
     <script>
         findBoegerMed("Jakob Ejersbo");
-
     </script>
-</body>
-
-</html>
+</body></html>

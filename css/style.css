@@ -4,7 +4,120 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
+    background-color: #9CA5A4;
 }
+
+
+
+header {
+    background-color: #B5A081;
+    height: 40vh
+}
+
+footer {
+    background-color: #B5A081;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.footertekst {
+    margin-top: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-top: 50px;
+    font-family: helvetica;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: helvetica;
+}
+
+p,
+button {
+    font-family: verdana;
+}
+
+#eksempel {
+    font-size: 80%;
+    text-align: center;
+    opacity: 0.6;
+}
+
+#introtekst {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#logo {
+    width: 60%;
+    margin-left: 22%;
+}
+
+article {
+    text-align: center;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.example {
+    text-align: center;
+
+}
+
+.emner {
+    text-align: center;
+}
+
+.knap {
+    background-color: #D8B201;
+    border-radius: 0.7em;
+    margin: 2%;
+    padding: 1.5%;
+    width: 35%;
+    border-color: black;
+    font-weight: 550;
+
+
+
+}
+
+
+
+#soegeknap {
+    background-color: #384216;
+    border-radius: 1em;
+    width: 15%;
+    color: white;
+    padding: 1%;
+
+
+
+}
+
+
+.fa-search {
+    color: #D8B201;
+    margin-left: 30%;
+}
+
+video {
+    width: 100%;
+    margin-top: 2%;
+}
+
+
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -34,7 +147,10 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+
 }
+
+
 
 .accordion:after {
     content: '\02795';
