@@ -1,3 +1,5 @@
+//Skal vi bruge dette dokument?
+
 "use strict";
 
 function findBoegerMed(forfatter) {
@@ -39,13 +41,5 @@ function findBoegerMed(forfatter) {
 document.getElementById("soegeknap").addEventListener("click", function () {
     const forfatter = document.getElementById("soegefelt").value;
     findBoegerMed(forfatter);
-
-})
-
-
-
-//Knap til søgefelt funktion - virker ikke endnu...
-document.getElementById("knap").addEventListener("click", function () {
-    document.getElementById("knap").value = document.getElementById("soegefelt").value;
 
 })

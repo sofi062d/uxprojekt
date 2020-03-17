@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- husk en beskrivelse af siden i content -->
     <meta name="description" content="">
-    <!-- husk unik title til alle sider -->
     <title></title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
+
+
+
 <body>
-    <header>
+    <header id="seeker">
         <nav>
             <h1>Velkommen til </h1>
             <img id="logo" src="img/eaaalogooutline.png" alt="EAAAsy Library logo">
@@ -29,16 +32,27 @@
         <h2>Hvad søger du?</h2>
         <p id="eksempel">Eksempel:</p>
         <section class="emner">
-            <button class="knap" type="text" id="knap" value="Grafisk design">Grafisk design</button>
-            <button class="knap" type="text" id="knap" value="Multimediedesign">Multimediedesign</button>
+            <button class="knap" type="button" id="markedf">Markedsøkonomi</button>
+
+            <button class="knap" type="button" id="webdesign">Webdesign</button>
+
+            <button class="knap" type="button" id="grafisk">Grafisk design</button>
+
+            <button class="knap" type="button" id="multi">Multimediedesign</button>
+
+
             <br>
-            <button class="knap" type="text" id="knap" value="Markedsføring">Markedsføring</button>
-            <button class="knap" id="knap">Webdesign</button>
+            <br>
+            <input id="myTextBox" type="text">
+            <input class="soegeknap" id="submit" type="submit" value="Søg">
+            <!--hvordan får vi <i class="fa fa-search"></i> ind i det grønne område?-->
         </section>
 
 
         <br>
         <br>
+
+        <!--
         <form class="example">
             <input type="text" id="soegefelt" placeholder="Søg på et emne" name="search">
             <br>
@@ -49,7 +63,7 @@
 
 
         </form>
-
+-->
 
         <section>
             <h2 id="overskrift"> Bøger om </h2>
@@ -63,6 +77,8 @@
             <div class="panel">
                 <p id="paneltekst1"></p>
 
+                <!--hvordan får vi en bog i hver accordion?!??-->
+                <div id="indhold" class="indhold"></div>
             </div>
 
             <button class="accordion" id="paneloverskrift2"></button>
@@ -83,7 +99,15 @@
     </footer>
     <script src="accordion.js"></script>
     <script src="boeger.js"></script>
+    <script src="soegefunktion.js"></script>
     <script>
         findBoegerMed("Jakob Ejersbo");
     </script>
 </body></html>
+
+
+
+
+<!-- hvad gør den? - kan evt. viser uri til bibliotekets api (testredskab) -->
+<div id="test" class=test></div>
+
