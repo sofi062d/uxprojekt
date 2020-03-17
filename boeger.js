@@ -41,3 +41,11 @@ document.getElementById("soegeknap").addEventListener("click", function () {
     findBoegerMed(forfatter);
 
 })
+
+
+
+//Knap til søgefelt funktion - virker ikke endnu...
+document.getElementById("knap").addEventListener("click", function () {
+    document.getElementById("knap").value = document.getElementById("soegefelt").value;
+
+})
