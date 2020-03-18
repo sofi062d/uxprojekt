@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     height: 100vh;
     background-color: #9CA5A4;
+    width: 100%;
 }
 
 
@@ -19,13 +20,14 @@ footer {
     background-color: #B5A081;
     text-align: center;
     font-size: 16px;
-
+    padding-top: 1em;
 }
 
 .footertekst {
     margin-top: 1%;
     padding-top: 2%;
     padding-bottom: 2%;
+    font-weight: bold;
 }
 
 
@@ -58,6 +60,10 @@ button {
 #introtekst {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+img{
+    width: 50%;
 }
 
 #logo {
@@ -164,4 +170,35 @@ video {
 .active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
+}
+
+
+@media all and (min-width: 812px) {
+    header{
+        height: 110vh;
+    }
+    video{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1%;
+    }
+    #logo{
+
+    }
+}
+
+@media all and (min-width: 1024px) {
+    header{
+        height: 40vh;
+    }
+    footer{
+        bottom: 0;
+        width: 100%;
+        position: relative;
+        height: 25%;
+    }
+    body{
+        position: absolute;
+    }
 }
