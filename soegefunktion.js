@@ -4,6 +4,17 @@
  **/
 $(document).ready(function () {
 
+    const paneloverskrift = [];
+    paneloverskrift[0] = "#paneloverskrift0";
+    paneloverskrift[1] = "#paneloverskrift1";
+    paneloverskrift[2] = "#paneloverskrift2";
+    const paneltekst = [];
+    paneltekst[0] = "#paneltekst0";
+    paneltekst[1] = "#paneltekst1";
+    paneltekst[2] = "#paneltekst2";
+
+    $("#accordion_section").hide();
+
     // get user input
     $("#myTextBox").on("change paste keyup ", function () {
 
@@ -22,21 +33,25 @@ $(document).ready(function () {
     $("#markedf").click(function () {
         $("#myTextBox").val("Markedsøkonomi").change();
         $("#submit").trigger("click");
+        $("#accordion_section").show();
     });
 
     $("#webdesign").click(function () {
         $("#myTextBox").val("Webdesign").change();
         $("#submit").trigger("click");
+        $("#accordion_section").show();
     });
 
     $("#grafisk").click(function () {
         $("#myTextBox").val("Grafisk design").change();
         $("#submit").trigger("click");
+        $("#accordion_section").show();
     });
 
     $("#multi").click(function () {
         $("#myTextBox").val("Multimediedesign").change();
         $("#submit").trigger("click");
+        $("#accordion_section").show();
     });
 
     // format the searchstring
@@ -46,6 +61,7 @@ $(document).ready(function () {
         $('#indhold').html('');
         //$('#test').hide();
 
+        $("#accordion_section").show();
 
 
         // henter data via AJAX
@@ -58,6 +74,8 @@ $(document).ready(function () {
 
                 //console.log(xml);
                 // viser XML-strukturen i console-inspect-tool
+                let i = 0;
+                $("#overskrift").html("Bøger om " + $("#myTextBox").val());
 
                 $(xml).find('item').each(function () { // ved hver <item> gøres følgende ...
 
@@ -82,7 +100,10 @@ $(document).ready(function () {
                     }
 
                     // tilføjer (append) markup til #indhold
-                    $('#indhold').append('<div class="bog">' + // .bog en bogkasse begynder
+
+                    $(paneloverskrift[i]).html(titel);
+
+                    $(paneltekst[i]).html('<div class="bog">' + // .bog en bogkasse begynder
                         '<a href="' + permalink + '" target="_blank">' + visBillede(billede) + '</a>' + // billede
                         '<h3>' + titel + '</h3>' + // titel
                         '<h4> Forfatter: ' + forfatter + '</h4>' + // forfatter
@@ -92,6 +113,7 @@ $(document).ready(function () {
                         '<a href="' + permalink + // permalink
                         '</div>' // bogkasse slut
                     );
+                    i++;
                 })
             }
         }); // ajax slut
