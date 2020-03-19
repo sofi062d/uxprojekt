@@ -46,6 +46,10 @@ h2 {
     font-family: helvetica;
 }
 
+h3 {
+    font-family: helvetica;
+}
+
 p,
 button {
     font-family: verdana;
@@ -62,7 +66,7 @@ button {
     margin-right: 10%;
 }
 
-img{
+img {
     width: 50%;
 }
 
@@ -87,27 +91,20 @@ article {
 }
 
 .knap {
-    /*background-color: #D8B201;
-    border-radius: 0.7em;
-    margin: 2%;
-    padding: 1.5%;
-    width: 35%;
-    border-color: black;
-    font-weight: 550;*/
     margin: 2%;
     width: 40%;
     background-color: #D8B201;
-    box-shadow:inset 0px 1px 0px 0px #D8B201;
-    border-radius:6px;
-    border:1px solid #D8B201;
-    display:inline-block;
-    cursor:pointer;
+    box-shadow: inset 0px 1px 0px 0px #D8B201;
+    border-radius: 6px;
+    border: 1px solid #D8B201;
+    display: inline-block;
+    cursor: pointer;
     color: black;
-    font-size:15px;
-    font-weight:bold;
+    font-size: 13px;
+    font-weight: bold;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
-    text-decoration:none;
+    text-decoration: none;
 
 
 }
@@ -116,18 +113,18 @@ article {
 
 .soegeknap {
     background-color: #384216;
-    box-shadow:inset 0px 1px 0px 0px #384216;
-    border-radius:6px;
-    border:1px solid #384216;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    padding:6px 24px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #528009;
+    box-shadow: inset 0px 1px 0px 0px #384216;
+    border-radius: 6px;
+    border: 1px solid #384216;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528009;
 }
 
 
@@ -192,10 +189,11 @@ video {
 
 
 @media all and (min-width: 812px) {
-    header{
+    header {
         height: 110vh;
     }
-    video{
+
+    video {
         width: 90%;
         display: block;
         margin: 0 auto;
@@ -204,21 +202,22 @@ video {
 }
 
 @media all and (min-width: 1024px) {
-    header{
+    header {
         height: 40vh;
     }
-    footer{
+
+    footer {
         bottom: 0;
         width: 100%;
         position: relative;
         height: 25%;
     }
 
-    body{
+    body {
         position: absolute;
     }
 
-    @media all and (min-width: 1500px){
+    @media all and (min-width: 1500px) {
         header {
             height: 50vh;
         }
@@ -235,7 +234,8 @@ video {
             position: relative;
             height: 25%;
         }
-        .footertekst{
+
+        .footertekst {
             margin-bottom: 0px;
             margin-top: 0px;
             padding-top: 15px;
