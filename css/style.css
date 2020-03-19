@@ -87,14 +87,27 @@ article {
 }
 
 .knap {
-    background-color: #D8B201;
+    /*background-color: #D8B201;
     border-radius: 0.7em;
     margin: 2%;
     padding: 1.5%;
     width: 35%;
     border-color: black;
-    font-weight: 550;
-
+    font-weight: 550;*/
+    margin: 2%;
+    width: 40%;
+    background-color: #D8B201;
+    box-shadow:inset 0px 1px 0px 0px #D8B201;
+    border-radius:6px;
+    border:1px solid #D8B201;
+    display:inline-block;
+    cursor:pointer;
+    color: black;
+    font-size:15px;
+    font-weight:bold;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    text-decoration:none;
 
 
 }
@@ -103,13 +116,18 @@ article {
 
 .soegeknap {
     background-color: #384216;
-    border-radius: 1em;
-    width: 15%;
-    color: white;
-    padding: 1%;
-
-
-
+    box-shadow:inset 0px 1px 0px 0px #384216;
+    border-radius:6px;
+    border:1px solid #384216;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #528009;
 }
 
 
@@ -127,8 +145,8 @@ video {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: lightgray;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -183,9 +201,6 @@ video {
         margin: 0 auto;
         margin-top: 1%;
     }
-    #logo{
-
-    }
 }
 
 @media all and (min-width: 1024px) {
@@ -198,7 +213,34 @@ video {
         position: relative;
         height: 25%;
     }
+
     body{
         position: absolute;
+    }
+
+    @media all and (min-width: 1500px){
+        header {
+            height: 50vh;
+        }
+
+        #logo {
+            width: 30%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            bottom: 0;
+            width: 100%;
+            position: relative;
+            height: 25%;
+        }
+        .footertekst{
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
     }
 }
