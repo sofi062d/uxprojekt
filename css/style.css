@@ -13,7 +13,12 @@ body {
 
 header {
     background-color: #B5A081;
-    height: 40vh
+    height: 50vh;
+}
+
+#sprog {
+    width: 20%;
+    margin-bottom: -50px;
 }
 
 footer {
